@@ -9,37 +9,37 @@
 
 <body>
     <form action="sendApplication">
-        <h2>Отправка заявки на конференцию</h2>
-        <h3>Основные данные</h3>
-        <h4>* Фамилия, Имя, Отчество:</h4>
+        <h1>Отправка заявки на конференцию</h1>
+        <h2>Основные данные</h2>
+        <h3>* Фамилия, Имя, Отчество:</h3>
         <input type="text" name="fio">
-        <h4>Дата рождения:</h4>
+        <h3>Дата рождения:</h3>
         <input type="date" name="birthDate" id="birthDate">
-        <h4>Пол:</h4>
+        <h3>Пол:</h3>
         <p>
             <input type="radio" name="sex" value="male" id="radioMale"> <label for="radioMale">мужской</label>
             <input type="radio" name="sex" value="female" id="radioFemale"><label for="radioFemale">женский</label>
         </p>
-        <h3>Данные для создания личного кабинета</h3>
-        <h4>* Адрес электронной почты:</h4>
+        <h2>Данные для создания личного кабинета</h2>
+        <h3>* Адрес электронной почты:</h3>
         <input type="text" name="email">
-        <h4>* Пароль для создания личного кабинета:</h4>
+        <h3>* Пароль для создания личного кабинета:</h3>
         <input type="password" name="password">
-        <h4>* Подтверждение пароля:</h4>
+        <h3>* Подтверждение пароля:</h3>
         <input type="password" name="confirmPassword">
-        <h3>Материалы для конференции</h3>
-        <h4>* Тема доклада:</h4>
+        <h2>Материалы для конференции</h2>
+        <h3>* Тема доклада:</h3>
         <input type="text" name="topic">
-        <h4>* Тезисы доклада (не более 1000 символов):</h4>
+        <h3>* Тезисы доклада (не более 1000 символов):</h3>
         <textarea name="reportAbstracts" cols="30" rows="10"></textarea>
-        <h4>* Файл презентации:</h4>
+        <h3>* Файл презентации:</h3>
         <input type="file" name="file">
-        <h3>Дополнительные опции</h3>
+        <h2>Дополнительные опции</h2>
         <p>
-            <input type="checkbox" value="hotelAccommodation" id="checkHotelAccommodation"><label for="checkHotelAccommodation">Проживние в отеле</label><br>
-            <input type="checkbox" value="breakfast" id="checkBreakfast"><label for="checkBreakfast">Завтрак</label><br>
-            <input type="checkbox" value="lunch" id="checkLunch"><label for="checkLunch">Обед</label><br>
-            <input type="checkbox" value="dinner" id="checkDinner"><label for="checkDinner">Ужин</label><br>
+            <input type="checkbox" name="options" value="hotelAccommodation" id="checkHotelAccommodation"><label for="checkHotelAccommodation">Проживние в отеле</label><br>
+            <input type="checkbox" name="options" value="breakfast" id="checkBreakfast"><label for="checkBreakfast">Завтрак</label><br>
+            <input type="checkbox" name="options" value="lunch" id="checkLunch"><label for="checkLunch">Обед</label><br>
+            <input type="checkbox" name="options" value="dinner" id="checkDinner"><label for="checkDinner">Ужин</label><br>
         </p>
         <hr>
         <input type="button" name="send" value="Отправить">
